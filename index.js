@@ -1,5 +1,5 @@
 const skills = document.querySelectorAll('.skills-Container .skill');
-const percChange = document.getElementByClassName('percentage');
+const percChange = document.getElementsByClassName('percentage');
 
 percChange.innerHTML = "sdasd";
 
@@ -12,11 +12,12 @@ window.addEventListener('scroll', (e) => {
         const bottom = top + skill.clientHeight;
         console.log(viewTop, viewBottom);
         console.log(top, bottom);
+        //const percentageDomElement = skill.getElementsByClassName("percentage");
         if(viewTop < top && bottom < viewBottom){
             skill.classList.add('show');
-            for (let x = 0; x < random() ; x++){
-                percChange.innerHTML = x;
-            }
+            //for (let x = 0; x < 1 ; x++){
+
+
         }else{
             skill.classList.remove('show')
         }

@@ -531,6 +531,12 @@ i{
     width: 100%;
     border: 1px solid rgba(255,255,255,.5);
     height: 5px;
+    position: relative;
+}
+
+.skills-Container .progress > div{
+    position: absolute;
+    height: 100%;
 }
 
 .skills-Container .skill .progressBg{
@@ -541,16 +547,10 @@ i{
 }
 
 .skills-Container .skill.show .progressBg{
-    width: 80%
+    width: 100%
 }
 
-.skills-Container .skill.css.show .progressBg{
-    width: 90%
-}
 
-.skills-Container .skill.js.show .progressBg{
-    width: 45%
-}
 
 
 
